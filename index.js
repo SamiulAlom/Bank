@@ -43,7 +43,9 @@ withdraw.addEventListener('click', (e) => {
     // const totalWithdraw = withdrawAmountNumber + currentWithdrawNumber;
     // document.getElementById('cWithdraw').innerText =totalWithdraw;
     updateSpan("cWithdraw",withdrawAmountNumber);
-    updateSpan("cBalance", -1 * withdrawAmountNumber);
+   // updateSpan2("cBalance", withdrawAmountNumber);
+   updateSpan("cBalance", -1 * withdrawAmountNumber);
+
     // const currentBalance = document.getElementById('cBalance').innerText;
     // const currentBalanceNumber = parseFloat(currentBalance);
     // const totalBalance = currentBalanceNumber - withdrawAmountNumber;
@@ -52,3 +54,10 @@ withdraw.addEventListener('click', (e) => {
     document.getElementById('withdrawAmount').value="";
 
 })
+// function updateSpan2(id,number){
+//     const A = document.getElementById(id).innerText;
+//     const B = parseFloat(A);
+//     const total =  B - number;
+//     const pTotal = Math.abs(total);
+//     document.getElementById(id).innerText = pTotal;
+// }
